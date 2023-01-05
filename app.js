@@ -1,35 +1,12 @@
+import person from "./person.js";
+import prsn from "./person.js"
 
+import {cleanOutput, data} from "./utils.js";
 
-//let, const
-let nr = 5 //primitive value
-// funktsioonid ja muud - const
-
-const numbers = [1, 2, 3]
-/*
-numbers [2] = 4
-console.log(numbers)
-console.log(numbers[0])
-console.log(numbers.length)
-*/
-
-//massiivi t66tlus - for each tsykkel
-/*
-numbers.forEach((numbers) => {
-    console.log(number, index)
-})
-*/
-/*
-const person = {
-    vanus: 5,
-    hobid: ['jalgpall', 'telekas', 'kass'],
-
-} */
-
-const person = {
-    name: 'Karl',
-    vanus: 25,
-
-}
-
-console.log(person)  //person.name, person.vanus voib ka panna sulgudesse
-
+import { cleanOutput as clean } from "./utils.js"
+console.log(person)
+console.log(prsn)
+cleanOutput()
+console.log(data)
+clean()
+console.log(utils.data)
