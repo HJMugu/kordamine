@@ -1,32 +1,19 @@
-/*const numbers = [1, 2, 3]
-console.log(numbers)
+const numbers = [1,2,3]
+const [a, ,b] = numbers
+console.log(a)
+console.log(b)
 
-numbers.push(4)
-console.log(numbers)
-
-const numbers = [1, 2, 3]
-console.log(numbers)
-/*const newNumbers = [...numbers, 4]
-console.log(newNumbers)
-const newNumbers = [...numbers]
-numbers.push(4)
-
-console.log(newNumbers)
-console.log(numbers)*/
-/*
 const person = {
-    name: 'Kertu'
+    name: 'Kertu',
+    age: 25
 }
 
-const uusPerson = {
-    ...person,
-        age: 25
-}
-console.log(person)
-console.log(uusPerson) */
+const {name} = person
+const {age} = person
 
-const filter = (args) => {
-    return args.filter(el => el === 1)
-}
+console.log(name)
+console.log(age)
 
-console.log(filter([1, 2, 3, 4, 1]))
+const printName = ({name}) => console.log(name)
+
+printName(person)
